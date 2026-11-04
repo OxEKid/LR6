@@ -2,7 +2,7 @@
 
 **Дисциплина:** Основы программирования
 
-**Выполнил:** студент группы [4516] [Каныгин К.К.]
+**Выполнил:** студент группы 4516 Каныгин К.К.
 
 ## Цель работы
 
@@ -106,7 +106,57 @@ https://github.com/Kurtyanik/LR6
 ## Лог команд
 
 ```powershell
-[634d4de | 04.11.2026 22:20 | 4516 Каныгин К.К. | Отчёт: подготовлена структура README
+git --version
+git config --global user.name "4516 Каныгин К.К."
+git config --global user.email "ТВОЯ_ПОЧТА"
+git config --global core.quotepath false
+git config --list
+git clone https://github.com/OxEKid/LR6.git
+cd LR6
+git remote -v
+git branch -a
+git switch master
+git pull origin master
+git switch branch1
+git log --oneline
+git switch master
+git log --oneline
+git log --oneline --graph --decorate --all
+git show
+git diff master branch1
+git merge branch1
+git status
+notepad .\mergefile.txt
+git add mergefile.txt
+git commit -m "Разрешён конфликт при слиянии branch1 в master"
+git branch -d branch1
+git branch
+git add notes.txt
+git commit -m "Добавлен файл заметок"
+git commit -m "Добавлено определение Git"
+git commit -m "Добавлена временная строка"
+git revert --no-edit HEAD
+git log --oneline -5
+Get-Content .\notes.txt
+git switch -c report
+New-Item -ItemType Directory -Force screenshots
+git add screenshots
+git commit -m "Отчёт: добавлены снимки экрана"
+git add README.md
+git commit -m "Отчёт: подготовлена структура README"
+git log --pretty=format:"%h | %ad | %an | %s" --date=format:"%d.%m.%Y %H:%M"
+```
+
+## Вывод
+
+В ходе лабораторной работы были изучены основные возможности системы контроля версий Git.
+Выполнены настройка Git, клонирование удалённого репозитория, получение изменений с GitHub, просмотр истории коммитов, работа с ветками, слияние с разрешением конфликта, создание нескольких коммитов и откат изменений.
+Также подготовлен отчёт в формате Markdown с использованием снимков экрана и историей операций.
+
+## История операций
+
+```text
+634d4de | 04.11.2026 22:20 | 4516 Каныгин К.К. | Отчёт: подготовлена структура README
 171ec97 | 04.11.2026 22:16 | 4516 Каныгин К.К. | Отчёт: добавлены снимки экрана
 db44aa0 | 04.11.2026 22:11 | 4516 Каныгин К.К. | Revert "Добавлена временная строка"
 df654db | 04.11.2026 22:11 | 4516 Каныгин К.К. | Добавлена временная строка
@@ -117,4 +167,5 @@ c97c9e3 | 04.11.2026 22:06 | 4516 Каныгин К.К. | Разрешён ко�
 921f53b | 21.11.2020 20:09 | Kurtyanik | Обновление информации
 0f9f50d | 21.11.2020 20:08 | Kurtyanik | Заполнил файл
 c08a654 | 21.11.2020 20:02 | Kurtyanik | Файл создан пустым
-3c6e913 | 21.11.2020 19:58 | Kurtyanik | Initial commit]
+3c6e913 | 21.11.2020 19:58 | Kurtyanik | Initial commit
+```
