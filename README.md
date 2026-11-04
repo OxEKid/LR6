@@ -108,7 +108,7 @@ https://github.com/Kurtyanik/LR6
 ```powershell
 git --version
 git config --global user.name "4516 Каныгин К.К."
-git config --global user.email "ТВОЯ_ПОЧТА"
+git config --global user.email "karen-kanygin@mail.ru"
 git config --global core.quotepath false
 git config --list
 git clone https://github.com/OxEKid/LR6.git
